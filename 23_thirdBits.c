@@ -7,8 +7,11 @@
  *   Rating: 1
  */
 int thirdBits(void)
-{
-    return 2;
+
+// 1 0010 0100 1001 
+//     2    4    9
+{ 
+    return 0x249 << 12 | 0x249 | (0x249 & 0x0FF) << 24;
 }
 
 int test_thirdBits(void)

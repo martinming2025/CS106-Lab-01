@@ -8,7 +8,9 @@
  */
 int tmin(void)
 {
-    return 2;
+    // return 0x8 << 28;
+    return 1 << 31;
+    
 }
 
 int test_tmin(void)
